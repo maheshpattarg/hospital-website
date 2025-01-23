@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayushman Health Care - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Ayushman Health Care</h1>
+    <nav>
+      <a href="index.html">Home Page</a>
+      <a href="doctor.html">Know Your Doctor</a>
+    </nav>
+  </div>
+
+  <div class="hospital-image">
+    <h2>Ayushman Health Care</h2>
+  </div>
+  <p class="address">Address: RTO Circle, Opposite to KSRTC Depo, Shivaji Nagar, Belagavi, Karnataka 590016</p>
+
+  <blockquote class="quote">"स्वास्थ्यं परमं भाग्यं, स्वास्थ्यं सर्वार्थसाधनम्" <br>(Health is the greatest wealth and means to all accomplishments.)</blockquote>
+
+  <h3>Our Specialty</h3>
+  <p>Every Thursday Treatment on Infertility and Rejunation</p>
+  <p>Swarna Bindu Prashanam on Pushya Nakshatra only</p>
+
+  <h3>Our Treatments</h3>
+  <div class="treatments">
+    <div class="disease" onclick="showImage('ivdp.png', this)">IVDP</div>
+    <div class="disease" onclick="showImage('back_pain.jpg', this)">Back Pain</div>
+    <div class="disease" onclick="showImage('osteoarthritis.jpg', this)">Osteoarthritis</div>
+    <div class="disease" onclick="showImage('acidity.jpg', this)">Acidity</div>
+    <div class="disease" onclick="showImage('headache.jpg', this)">Headache</div>
+    <div class="disease" onclick="showImage('jaundice.jpg', this)">Jaundice </div>
+    <!-- Add more diseases similarly -->
+  </div>
+
+  <h3>Contact Us</h3>
+  <div class="contact">
+    <p><i class="fa fa-clock-o"></i> Clinic Timings: Mon - Sat (5 PM - 10 PM)</p>
+    <p><i class="fa fa-phone"></i> Contact Number: +91 99864 35750</p>
+    <a href="https://wa.me/+919986435750" target="_blank">WhatsApp</a>
+    <a href="https://www.instagram.com/ayushman_health_care__?igsh=MXhrNTg2MDY0Y3drcw==" target="_blank">Instagram</a> <!-- Replace # with Instagram URL -->
+    <a href="https://www.google.com/maps/place/Dr+Sagars+Ayushman+health+care/@15.8660419,74.5199184,17z/data=!4m6!3m5!1s0x3bbf677fa361dfbd:0xecb198b72abbbdf2!8m2!3d15.8660419!4d74.5199184!16s%2Fg%2F11kr82v6jn?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Location</a> <!-- Replace # with Map URL -->
+  </div>
+
+  <script>
+    function showImage(imagePath, element) {
+      const existingImage = element.querySelector("img");
+      if (existingImage) {
+        existingImage.remove(); // Remove the image if it already exists
+      } else {
+        const img = document.createElement("img");
+        img.src = imagePath;
+        img.alt = "Disease Image";
+        img.style.marginTop = "10px";
+        img.style.maxWidth = "100%";
+        element.appendChild(img);
+      }
+    }
+  </script>
+</body>
+</html>
