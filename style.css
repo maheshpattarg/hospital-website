@@ -124,6 +124,11 @@ body {
   border-radius: 50%;
 }
 
+#doctor p {
+  padding: 0 20px;
+  text-align: justify;
+}
+
 /* Announcement Section */
 .announcement {
   text-align: center;
