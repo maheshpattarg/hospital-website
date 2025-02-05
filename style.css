@@ -124,6 +124,35 @@ body {
   border-radius: 50%;
 }
 
+<<<<<<< Updated upstream
+#doctor p {
+  padding: 0 20px;
+  text-align: justify;
+}
+
+=======
+/* Center-align the second doctor's text and image */
+#doctor1 {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#doctor1 img {
+  display: block;
+  max-width: 200px; /* Consistent image size */
+  margin: 20px auto; /* Center-align image */
+  border-radius: 50%; /* Circular image */
+}
+
+#doctor1 p {
+  padding: 0 20px;
+  text-align: justify; /* Justify text for better readability */
+  margin: 10px auto;
+}
+
+
+>>>>>>> Stashed changes
 /* Announcement Section */
 .announcement {
   text-align: center;
