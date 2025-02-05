@@ -124,6 +124,13 @@ body {
   border-radius: 50%;
 }
 
+<<<<<<< Updated upstream
+#doctor p {
+  padding: 0 20px;
+  text-align: justify;
+}
+
+=======
 /* Center-align the second doctor's text and image */
 #doctor1 {
   text-align: center;
@@ -145,6 +152,7 @@ body {
 }
 
 
+>>>>>>> Stashed changes
 /* Announcement Section */
 .announcement {
   text-align: center;
